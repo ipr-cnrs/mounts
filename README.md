@@ -29,6 +29,12 @@ Manage to mount local and remote devices.
 - hosts: serverXYZ
   roles:
     - role: ipr-cnrs.mounts
+      mounts_list:
+        - name: /mnt/storage
+          src: 'nfs-share.domain.org:/mnt/share'
+          fstype: nfs4
+          opts: 'defaults,x-systemd.automount,x-systemd.device-timeout=2,x-systemd.idle-timeout=1min,noatime,noauto'
+          state: mounted
 ```
 
 ## Configuration
