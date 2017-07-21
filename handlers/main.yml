@@ -1,0 +1,11 @@
+---
+# handlers file for mounts
+
+- name: restart fs.target
+  systemd:
+    name: "{{ item }}"
+    state: restarted
+    daemon_reload: yes
+  with_items:
+    - local-fs.target
+    - remote-fs.target

@@ -37,6 +37,7 @@ This role will :
 * Create the mountpoint directory.
 * Add an entry in `/etc/fstab`.
 * Ensure to mount the device if specified.
+* Restart systemd's filesystem.target to ensure automount device works.
 
 ## Development
 

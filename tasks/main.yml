@@ -15,3 +15,4 @@
     opts: "{{ item.opts | default(mounts_opts) }}"
     state: "{{ item.state | default(mounts_state) }}"
   with_items: "{{ mounts_list }}"
+  notify: restart fs.target
