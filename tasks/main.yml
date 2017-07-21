@@ -1,0 +1,8 @@
+---
+# tasks file for mounts
+
+- name: Create mount directories
+  file:
+    path: "{{ item.name }}"
+    state: directory
+  with_items: "{{ mounts_list }}"
