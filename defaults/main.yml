@@ -7,3 +7,5 @@ mounts_list: []
 #    fstype: nfs4
 #    opts: 'defaults,x-systemd.automount,x-systemd.device-timeout=2,x-systemd.idle-timeout=1min,noatime,noauto'
 #    state: mounted
+mounts_opts: 'defaults,noatime'
+mounts_state: 'present'

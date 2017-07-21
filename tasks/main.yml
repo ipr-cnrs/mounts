@@ -6,3 +6,12 @@
     path: "{{ item.name }}"
     state: directory
   with_items: "{{ mounts_list }}"
+
+- name: Mount devices
+  mount:
+    name: "{{ item.name }}"
+    src: "{{ item.src }}"
+    fstype: "{{ item.fstype }}"
+    opts: "{{ item.opts | default(mounts_opts) }}"
+    state: "{{ item.state | default(mounts_state) }}"
+  with_items: "{{ mounts_list }}"

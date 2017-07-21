@@ -16,6 +16,10 @@ Manage to mount local and remote devices.
 
 * **mounts_list** : Directory that must contains all informations about devices to mount.
 * **mounts_list.name** : The path to the mountpoint.
+* **mounts_list.src** : Path to the local or remove device.
+* **mounts_list.fstype** : Device filesystem type.
+* **mounts_list.opts** : Mount options [default : `defaults,noatime`].
+* **mounts_list.state** : If the device should be 'mounted', 'present',… [default : `present`].
 
 ## Example Playbook
 
@@ -31,6 +35,8 @@ Manage to mount local and remote devices.
 
 This role will :
 * Create the mountpoint directory.
+* Add an entry in `/etc/fstab`.
+* Ensure to mount the device if specified.
 
 ## Development
 
