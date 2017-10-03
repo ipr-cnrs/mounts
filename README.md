@@ -10,11 +10,11 @@
 
 ## Overview
 
-Manage to mount local and remote devices.
+This role manages static mounts of local and remote devices.
 
 ## Role Variables
 
-* **mounts_list** : Directory that must contains all informations about devices to mount.
+* **mounts_list** : dictionary that must contain the following information about devices to mount :
 * **mounts_list.name** : The path to the mountpoint.
 * **mounts_list.src** : Path to the local or remove device.
 * **mounts_list.fstype** : Device filesystem type.

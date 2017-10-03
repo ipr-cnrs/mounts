@@ -1,6 +1,6 @@
 galaxy_info:
   author: "Jérémy Gardais"
-  description: "Manage local and remote mounts"
+  description: "Manage local and remote static mounts"
   license: WTFPL
   company: IPR
   issue_tracker_url: https://git.ipr.univ-rennes1.fr/cellinfo/ansible.mounts/issues
