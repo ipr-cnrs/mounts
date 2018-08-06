@@ -1,3 +1,4 @@
+# NO LONGER SUPPORTED, please take a look to [debops.console role][github debops console] !
 
 ## v1.0.1
 

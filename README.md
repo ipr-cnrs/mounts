@@ -1,4 +1,4 @@
-# Mounts
+# NO LONGER SUPPORTED, please take a look to [debops.console role][github debops console] !
 
 1. [Overview](#overview)
 2. [Role Variables](#role-variables)
@@ -69,3 +69,4 @@ Jérémy Gardais
 [mounts github]: https://github.com/ipr-cnrs/mounts
 [wtfpl website]: http://www.wtfpl.net/about/
 [ipr website]: https://ipr.univ-rennes1.fr/
+[github debops console]: https://github.com/debops/debops/tree/master/ansible/roles/debops.console
